@@ -196,7 +196,7 @@ export default function Home() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="mx-auto max-w-4xl px-6 py-12">
+      <section className="mx-auto max-w-4xl px-6 py-16">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("problem_title")}
         </h2>
@@ -344,7 +344,7 @@ export default function Home() {
       </section>
 
       {/* PROGRESS */}
-      <section id="progreso" className="mx-auto max-w-2xl px-6 py-16">
+      <section id="progreso" className="mx-auto max-w-2xl px-6 py-20">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("progress_title")}
         </h2>
@@ -354,7 +354,7 @@ export default function Home() {
 
         <div className="mt-12">
           <div
-            className="h-6 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
+            className="h-8 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
             role="img"
             aria-label={`${RESERVED_UNITS} of ${GOAL_UNITS} units reserved`}
           >
@@ -364,7 +364,7 @@ export default function Home() {
               style={{ "--progress": PROGRESS } as React.CSSProperties}
             />
           </div>
-          <p className="mt-5 text-lg font-semibold text-[var(--color-text)]">
+          <p className="mt-6 text-xl font-bold text-[var(--color-text)]">
             {RESERVED_UNITS} / {GOAL_UNITS}{" "}
             {locale === "en" ? "units" : "unidades"}{" "}
             {t("progress_reserved")} ({Math.round(PROGRESS * 100)}%)
