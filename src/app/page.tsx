@@ -145,28 +145,28 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] px-6 py-20 text-center">
+      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] px-6 py-24 text-center">
         {/* Language switcher */}
         <button
           onClick={toggle}
-          className="absolute right-4 top-4 z-10 inline-flex items-center gap-2 rounded-md border border-[var(--color-border)] px-3 py-1.5 text-xs font-medium text-[var(--color-text-muted)] transition hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+          className="absolute right-6 top-6 z-10 inline-flex items-center gap-2 rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-4 py-2 text-sm font-medium text-[var(--color-text-muted)] transition hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
           aria-label="Switch language"
         >
-          <span className="text-sm">🌐</span>
+          <span className="text-base">🌐</span>
           <span>{locale === "en" ? "Español" : "English"}</span>
         </button>
 
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent)]">
+        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-[var(--color-accent)]">
           {t("hero_tagline")}
         </p>
-        <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">
+        <h1 className="max-w-4xl px-4 text-5xl font-bold tracking-tight sm:text-7xl md:text-8xl">
           {t("hero_title")}
         </h1>
-        <p className="mt-6 max-w-xl text-lg text-[var(--color-text-muted)]">
+        <p className="mt-8 max-w-2xl px-4 text-xl text-[var(--color-text-muted)]">
           {t("hero_subtitle")}
         </p>
 
-        <div className="mt-10 w-full max-w-2xl">
+        <div className="mt-12 w-full max-w-3xl px-6">
           <img
             src="/images/hero-chassis.png"
             alt={
@@ -174,21 +174,21 @@ export default function Home() {
                 ? "Chassis of the Sovereign AI mini-PC — industrial design in black aluminum with perforated front panel"
                 : "Chasis del mini-PC Sovereign AI — diseño industrial en aluminio negro con panel frontal perforado"
             }
-            className="w-full rounded-lg border border-[var(--color-border)]"
+            className="hero-image w-full"
           />
-          <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+          <p className="mt-3 text-xs text-[var(--color-text-dim)]">
             {t("hero_image_ref")}
           </p>
         </div>
 
         <a
           href="#reserva"
-          className="mt-10 inline-flex items-center justify-center rounded-md bg-[var(--color-accent)] px-8 py-4 text-base font-semibold text-black transition hover:opacity-90"
+          className="cta-button mt-12 inline-flex items-center justify-center"
         >
           {t("hero_cta")}
         </a>
 
-        <p className="mt-4 text-sm text-[var(--color-text-muted)]">
+        <p className="mt-6 text-base text-[var(--color-text-muted)]">
           {RESERVED_UNITS} {locale === "en" ? "reservations" : "reservas"} ·{" "}
           {locale === "en" ? "Goal:" : "Meta:"} {GOAL_UNITS}{" "}
           {locale === "en" ? "units" : "unidades"}
@@ -196,43 +196,43 @@ export default function Home() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="mx-auto max-w-4xl px-6 py-24">
-        <h2 className="text-2xl font-bold sm:text-3xl">
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("problem_title")}
         </h2>
-        <p className="mt-4 text-[var(--color-text-muted)]">
+        <p className="mt-6 text-lg text-[var(--color-text-muted)]">
           {t("problem_body")}
         </p>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2">
-          <div>
-            <h3 className="font-semibold text-[var(--color-accent)]">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
+            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
               {t("problem_privacy")}
             </h3>
-            <p className="mt-2 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-[var(--color-text-muted)]">
               {t("problem_privacy_body")}
             </p>
           </div>
-          <div>
-            <h3 className="font-semibold text-[var(--color-accent)]">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
+            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
               {t("problem_no_intermediaries")}
             </h3>
-            <p className="mt-2 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-[var(--color-text-muted)]">
               {t("problem_no_intermediaries_body")}
             </p>
           </div>
-          <div>
-            <h3 className="font-semibold text-[var(--color-accent)]">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
+            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
               {t("problem_predictable_cost")}
             </h3>
-            <p className="mt-2 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-[var(--color-text-muted)]">
               {t("problem_predictable_cost_body")}
             </p>
           </div>
-          <div>
-            <h3 className="font-semibold text-[var(--color-accent)]">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
+            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
               {t("problem_total_control")}
             </h3>
-            <p className="mt-2 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-[var(--color-text-muted)]">
               {t("problem_total_control_body")}
             </p>
           </div>
@@ -240,31 +240,31 @@ export default function Home() {
       </section>
 
       {/* OPEN WEIGHTS */}
-      <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24">
+      <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-16">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("weights_title")}
           </h2>
-          <p className="mt-4 text-[var(--color-text-muted)]">
+          <p className="mt-6 text-lg text-[var(--color-text-muted)]">
             {t("weights_body")}
           </p>
           <div className="mt-10 overflow-x-auto">
             <table className="w-full border-collapse text-left text-sm">
               <thead>
-                <tr className="border-b border-[var(--color-border)]">
-                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">
+                <tr className="border-b-2 border-[var(--color-border)] bg-[var(--color-bg-elevated-2)]">
+                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
                     {locale === "en" ? "Model" : "Modelo"}
                   </th>
-                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">
+                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
                     {locale === "en" ? "Parameters" : "Parámetros"}
                   </th>
-                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">
+                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
                     {locale === "en" ? "Architecture" : "Arquitectura"}
                   </th>
-                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">
+                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
                     {locale === "en" ? "Quantization" : "Cuantización"}
                   </th>
-                  <th className="py-3 font-semibold text-[var(--color-text-muted)]">
+                  <th className="py-4 font-semibold text-[var(--color-text)]">
                     {locale === "en" ? "Tokens/sec" : "Tokens/seg"}
                   </th>
                 </tr>
@@ -285,11 +285,11 @@ export default function Home() {
                     key={model}
                     className="border-b border-[var(--color-border)]"
                   >
-                    <td className="py-3 font-medium">{model}</td>
-                    <td className="py-3 pr-4">{params}</td>
-                    <td className="py-3 pr-4">{arch}</td>
-                    <td className="py-3 pr-4">{quant}</td>
-                    <td className="py-3 font-semibold text-[var(--color-accent)]">
+                    <td className="py-4 font-medium">{model}</td>
+                    <td className="py-4 pr-4">{params}</td>
+                    <td className="py-4 pr-4">{arch}</td>
+                    <td className="py-4 pr-4">{quant}</td>
+                    <td className="py-4 font-bold text-[var(--color-accent)]">
                       {tps}
                     </td>
                   </tr>
@@ -304,9 +304,9 @@ export default function Home() {
       </section>
 
       {/* SPECS */}
-      <section className="px-6 py-24">
+      <section className="px-6 py-16">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("specs_title")}
           </h2>
           <div className="mt-10 overflow-x-auto">
@@ -331,10 +331,10 @@ export default function Home() {
                     key={label}
                     className="border-b border-[var(--color-border)]"
                   >
-                    <th className="w-1/3 py-3 pr-4 font-medium text-[var(--color-text-muted)]">
+                    <th className="w-1/3 py-4 pr-4 font-medium text-[var(--color-text)]">
                       {label}
                     </th>
-                    <td className="py-3">{value}</td>
+                    <td className="py-4 text-[var(--color-text-muted)]">{value}</td>
                   </tr>
                 ))}
               </tbody>
@@ -344,17 +344,17 @@ export default function Home() {
       </section>
 
       {/* PROGRESS */}
-      <section id="progreso" className="mx-auto max-w-2xl px-6 py-24">
-        <h2 className="text-2xl font-bold sm:text-3xl">
+      <section id="progreso" className="mx-auto max-w-2xl px-6 py-16">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("progress_title")}
         </h2>
-        <p className="mt-3 text-[var(--color-text-muted)]">
+        <p className="mt-4 text-lg text-[var(--color-text-muted)]">
           {t("progress_body").replace("{count}", String(GOAL_UNITS))}
         </p>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <div
-            className="h-3 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
+            className="h-4 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
             role="img"
             aria-label={`${RESERVED_UNITS} of ${GOAL_UNITS} units reserved`}
           >
@@ -364,7 +364,7 @@ export default function Home() {
               style={{ "--progress": PROGRESS } as React.CSSProperties}
             />
           </div>
-          <p className="mt-2 text-sm text-[var(--color-text-muted)]">
+          <p className="mt-3 text-base text-[var(--color-text-muted)]">
             {RESERVED_UNITS} / {GOAL_UNITS}{" "}
             {locale === "en" ? "units" : "unidades"}{" "}
             {t("progress_reserved")} (
