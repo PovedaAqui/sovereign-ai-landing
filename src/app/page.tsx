@@ -10,15 +10,15 @@ export default function Home() {
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] px-6 py-20 text-center">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent)]">
-          Local AI · Sin nube · Sin dependencias
+          European Sovereign AI · Hardware europeo · Sin nube
         </p>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">
-          Tu IA, tu hardware, tus datos
+          La IA que Europa necesita, construida en Europa
         </h1>
         <p className="mt-6 max-w-xl text-lg text-[var(--color-text-muted)]">
-          Sovereign AI es un mini-PC construido sobre AMD Strix Halo con 128&nbsp;GB
-          de memoria unificada, pensado para correr modelos grandes de IA en
-          local — sin enviar un solo token a la nube.
+          Sovereign AI es un mini-PC diseñado y fabricado en la UE, basado en
+          AMD Strix Halo con 128&nbsp;GB de memoria unificada. Procesamiento de
+          IA local sin depender de infraestructura cloud extranjera.
         </p>
 
         <div className="mt-10 w-full max-w-2xl">
@@ -40,12 +40,60 @@ export default function Home() {
           href="#reserva"
           className="mt-10 inline-flex items-center justify-center rounded-md bg-[var(--color-accent)] px-8 py-4 text-base font-semibold text-black transition hover:opacity-90"
         >
-          Reg&iacute;strate gratis — ayuda a que se fabrique
+          Reserva la tuya — desde 49&euro;
         </a>
 
         <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-          {RESERVED_UNITS} inscripciones · Meta: {GOAL_UNITS}
+          {RESERVED_UNITS} reservas · Meta: {GOAL_UNITS} unidades
         </p>
+      </section>
+
+      {/* SOBERANÍA DIGITAL */}
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold sm:text-3xl">
+            Europa depende de infraestructura de IA extranjera
+          </h2>
+          <p className="mt-4 text-[var(--color-text-muted)]">
+            El 95% de la capacidad de inferencia de IA en Europa reside en
+            centros de datos de Estados Unidos y China. Esto crea una
+            dependencia estratégica que la UE AI Act y las nuevas normativas de
+            soberanía digital intentan corregir — pero la regulación no sirve de
+            nada sin hardware propio.
+          </p>
+          <div className="mt-10 grid gap-8 sm:grid-cols-3">
+            <div>
+              <h3 className="font-semibold text-[var(--color-accent)]">
+                Soberanía de datos
+              </h3>
+              <p className="mt-2 text-[var(--color-text-muted)]">
+                Sanidad, justicia y administración pública necesitan que los
+                datos nunca salgan de la UE. La inferencia local es la única
+                forma de cumplir con el RGPD y la EU AI Act sin excepciones.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-[var(--color-accent)]">
+                Independencia tecnológica
+              </h3>
+              <p className="mt-2 text-[var(--color-text-muted)]">
+                Sin llaves de API de proveedores extranjeros. Sin riesgo de
+                sanciones, bloqueos geopolíticos o cambios de términos de
+                servicio unilaterales. Infraestructura propia, control propio.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-[var(--color-accent)]">
+                Cadena de suministro europea
+              </h3>
+              <p className="mt-2 text-[var(--color-text-muted)]">
+                Fabricado en la UE con componentes europeos. Diseño europeo,
+                ensamblaje europeo, soporte europeo. Cada unidad fortalece la
+                base industrial tecnológica del continente.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* PROBLEMA */}
@@ -59,8 +107,8 @@ export default function Home() {
               Privacidad real
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              Sanidad, legal y finanzas necesitan que los datos nunca salgan
-              de su red. Local significa local de verdad.
+              Sanidad, legal y finanzas necesitan que los datos nunca salgan de
+              su red. Local significa local de verdad.
             </p>
           </div>
           <div>
@@ -68,8 +116,8 @@ export default function Home() {
               EU AI Act
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              La regulaci&oacute;n empuja a sectores enteros hacia
-              infraestructura on-premise. Antic&iacute;pate.
+              La regulación empuja a sectores enteros hacia infraestructura
+              on-premise. Antic&iacute;pate.
             </p>
           </div>
           <div>
@@ -77,8 +125,8 @@ export default function Home() {
               Coste a largo plazo
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              El punto de equilibrio entre cloud APIs y hardware propio
-              llega antes de lo que crees.
+              El punto de equilibrio entre cloud APIs y hardware propio llega
+              antes de lo que crees.
             </p>
           </div>
           <div>
@@ -125,18 +173,19 @@ export default function Home() {
       {/* PROGRESO */}
       <section id="progreso" className="mx-auto max-w-2xl px-6 py-24">
         <h2 className="text-2xl font-bold sm:text-3xl">
-          Progreso de las inscripciones
+          Meta de producción
         </h2>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Necesitamos {GOAL_UNITS} registros para alcanzar el umbral de
-          financiaci&oacute;n y arrancar la producci&oacute;n.
+          Necesitamos {GOAL_UNITS} reservas confirmadas para arrancar la
+          primera serie de fabricación. Depósito reembolsable de 49&euro;. Se
+          cobra el resto solo si alcanzamos la meta.
         </p>
 
         <div className="mt-8">
           <div
             className="h-3 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
             role="img"
-            aria-label={`${RESERVED_UNITS} de ${GOAL_UNITS} registros completados`}
+            aria-label={`${RESERVED_UNITS} de ${GOAL_UNITS} unidades reservadas`}
           >
             <div
               aria-hidden="true"
@@ -145,25 +194,25 @@ export default function Home() {
             />
           </div>
           <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-            {RESERVED_UNITS} / {GOAL_UNITS} registros completados ({Math.round(PROGRESS * 100)}%)
+            {RESERVED_UNITS} / {GOAL_UNITS} unidades reservadas (
+            {Math.round(PROGRESS * 100)}%)
           </p>
         </div>
       </section>
 
-      {/* FORMULARIO DE REGISTRO */}
+      {/* FORMULARIO DE RESERVA */}
       <section
         id="reserva"
         className="border-t border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24"
       >
         <div className="mx-auto max-w-md">
-          <h2 className="text-2xl font-bold sm:text-3xl">Reg&iacute;strate gratis</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">Reserva la tuya</h2>
           <p className="mt-3 text-[var(--color-text-muted)]">
-            Necesitamos {GOAL_UNITS} registros para alcanzar el umbral de
-            financiaci&oacute;n y arrancar la producci&oacute;n. Sin pagos, sin
-            compromisos.
+            Depósito reembolsable de 49&euro;. Se cobra el resto solo si
+            alcanzamos la meta de fabricación.
           </p>
 
-          <form action="/api/register" method="POST" className="mt-8 space-y-5">
+          <form action="/api/reserve" method="POST" className="mt-8 space-y-5">
             <div>
               <label htmlFor="name" className="block text-sm font-medium">
                 Nombre completo
@@ -219,12 +268,12 @@ export default function Home() {
               <select
                 id="variant"
                 name="variant"
+                required
                 className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
               >
                 <option value="mesh">Mesh Airflow</option>
                 <option value="ridge">Ridge Curvo</option>
                 <option value="sg13">SG13 Minimalista</option>
-                <option value="">Sin preferencia</option>
               </select>
             </div>
 
@@ -237,8 +286,8 @@ export default function Home() {
                 className="mt-1 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
               />
               <label htmlFor="consent" className="text-sm text-[var(--color-text-muted)]">
-                Acepto la pol&iacute;tica de privacidad y recibir actualizaciones
-                del proyecto.
+                Acepto la pol&iacute;tica de privacidad y los t&eacute;rminos
+                de la reserva.
               </label>
             </div>
 
@@ -246,14 +295,14 @@ export default function Home() {
               type="submit"
               className="w-full rounded-md bg-[var(--color-accent)] px-6 py-4 text-base font-semibold text-black transition hover:opacity-90"
             >
-              Registrarme gratis
+              Reservar por 49&euro;
             </button>
           </form>
         </div>
       </section>
 
       <footer className="px-6 py-12 text-center text-sm text-[var(--color-text-muted)]">
-        <p>Sovereign AI — dise&ntilde;ado en la UE. Sin logos, sin marcas registradas de terceros.</p>
+        <p>Sovereign AI — dise&ntilde;ado y fabricado en la UE. Hardware europeo para soberanía digital europea.</p>
       </footer>
     </main>
   );
