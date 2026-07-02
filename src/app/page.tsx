@@ -123,7 +123,10 @@ export default function Home() {
                   ["Gemma 4 26B", "26B (3.8B activos)", "MoE (128 expertos)", "Q4_K_M", "≈ 90"],
                   ["Gemma 4 31B", "31B (densa)", "Dense", "Q4_K_M", "≈ 20"],
                   ["Mistral Large", "123B (densa)", "Dense", "Q4_K_M", "≈ 22"],
-                  ["DeepSeek V3", "236B (MoE)", "MoE (64 expertos)", "Q4_K_M", "≈ 40"],
+                  ["DeepSeek-V3", "671B (37B activos)", "MoE (MLA)", "Q4_K_M", "≈ 28"],
+                  ["DeepSeek-R1", "671B (MoE)", "MoE (RA), RL", "Q4_K_M", "≈ 25"],
+                  ["DeepSeek-V3.2", "685B (MoE)", "MoE (DSA)", "Q4_K_M", "≈ 30"],
+                  ["DeepSeek-R1-Distill-Qwen 32B", "32B (densa)", "Dense", "Q4_K_M", "≈ 19"],
                   ["MiniMax M2.5", "228B", "MoE", "Q3_K_M", "≈ 35"],
                 ].map(([model, params, arch, quant, tps]) => (
                   <tr key={model} className="border-b border-[var(--color-border)]">
