@@ -240,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* OPEN WEIGHTS */}
-      <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-12">
+      <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-16">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("weights_title")}
