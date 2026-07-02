@@ -11,14 +11,14 @@ export default function Home() {
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] px-6 py-20 text-center">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent)]">
-          European Sovereign AI · Hardware europeo · Sin nube
+          Local AI · Open Weights · Sin nube
         </p>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">
-          La IA que Europa necesita, construida en Europa
+          Ejecuta IA abierta en tu propio hardware
         </h1>
         <p className="mt-6 max-w-xl text-lg text-[var(--color-text-muted)]">
-          Un mini-PC diseñado y fabricado en la UE con AMD Strix Halo y 128&nbsp;GB de memoria unificada. 
-          Procesamiento de IA local, sin depender de infraestructura cloud extranjera.
+          Un mini-PC diseñado para correr modelos de IA locales con AMD Strix Halo y 128&nbsp;GB de memoria unificada. 
+          Sin APIs de terceros. Sin suscripciones. Sin límites.
         </p>
 
         <div className="mt-10 w-full max-w-2xl">
@@ -47,54 +47,16 @@ export default function Home() {
         </p>
       </section>
 
-      {/* SOBERANÍA DIGITAL */}
-      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">
-            Europa depende de infraestructura de IA extranjera
-          </h2>
-          <p className="mt-4 text-[var(--color-text-muted)]">
-            El 95% de la capacidad de inferencia de IA en Europa reside en centros de datos de Estados Unidos y China. 
-            Esta dependencia estratégica es incompatible con la EU AI Act, el RGPD y la autonomía digital que Europa necesita. 
-            La regulación no sirve de nada sin hardware propio.
-          </p>
-          <div className="mt-10 grid gap-8 sm:grid-cols-3">
-            <div>
-              <h3 className="font-semibold text-[var(--color-accent)]">
-                Soberanía de datos
-              </h3>
-              <p className="mt-2 text-[var(--color-text-muted)]">
-                Sanidad, justicia y administración pública no pueden enviar datos a servidores en terceros países. 
-                La inferencia local garantiza que la información sensible permanece en la UE, cumpliendo RGPD y EU AI Act sin excepciones.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-[var(--color-accent)]">
-                Independencia tecnológica
-              </h3>
-              <p className="mt-2 text-[var(--color-text-muted)]">
-                Sin llaves de API de proveedores extranjeros. Sin riesgo de sanciones, bloqueos geopolíticos o cambios de términos de servicio unilaterales. 
-                Control total sobre la infraestructura crítica.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-[var(--color-accent)]">
-                Cadena de suministro europea
-              </h3>
-              <p className="mt-2 text-[var(--color-text-muted)]">
-                Fabricado en la UE con componentes europeos. Diseño europeo, ensamblaje europeo, soporte europeo. 
-                Cada unidad fortalece la base industrial tecnológica del continente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROBLEMA */}
+      {/* EL PROBLEMA */}
       <section className="mx-auto max-w-4xl px-6 py-24">
         <h2 className="text-2xl font-bold sm:text-3xl">
-          Por qu&eacute; la IA local importa ahora
+          La IA que usas no es tuya
         </h2>
+        <p className="mt-4 text-[var(--color-text-muted)]">
+          Cuando usas APIs cloud para inferencia, tus datos salen de tu red. Tus prompts se almacenan. 
+          Tus modelos están controlados por terceros que pueden cambiar precios, limitar acceso o censurar respuestas. 
+          La IA abierta no se negocia desde fuera — se ejecuta dentro.
+        </p>
         <div className="mt-10 grid gap-8 sm:grid-cols-2">
           <div>
             <h3 className="font-semibold text-[var(--color-accent)]">
@@ -107,69 +69,41 @@ export default function Home() {
           </div>
           <div>
             <h3 className="font-semibold text-[var(--color-accent)]">
-              EU AI Act
+              Sin intermediarios
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              La regulación empuja a sectores enteros hacia infraestructura on-premise. 
-              Quienes se anticipen tendrán una ventaja competitiva decisiva.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-[var(--color-accent)]">
-              Coste a largo plazo
-            </h3>
-            <p className="mt-2 text-[var(--color-text-muted)]">
-              Las APIs cloud cobran por token. A volumen medio-alto, el hardware propio es más barato y predecible. 
-              El punto de equilibrio se acerca más de lo que parece.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-[var(--color-accent)]">
-              Sin dependencias
-            </h3>
-            <p className="mt-2 text-[var(--color-text-muted)]">
-              Sin límites de proveedor, sin apagones de terceros, sin cambios de política unilaterales. 
+              Sin llaves de API, sin límites de proveedor, sin apagones de terceros. 
               Tu infraestructura, tus reglas.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* PRODUCTO */}
-      <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">Especificaciones</h2>
-          <div className="mt-10 overflow-x-auto">
-            <table className="w-full border-collapse text-left text-sm">
-              <tbody>
-                {[
-                  ["CPU", "AMD Ryzen AI Max+ 395 (Strix Halo), 16 núcleos Zen 5"],
-                  ["Memoria", "128 GB LPDDR5X-8000 unificada (~256 GB/s)"],
-                  ["GPU", "Radeon 8060S integrada (40 CU, RDNA 3.5, 2.9 GHz)"],
-                  ["NPU", "50 TOPS (32 Tiles)"],
-                  ["Almacenamiento", "NVMe Gen4, actualizable"],
-                  ["Ruido", "< 35 dB en reposo, < 45 dB en carga sostenida"],
-                  ["Software", "Ubuntu 24.04 + ROCm stack preinstalado"],
-                ].map(([label, value]) => (
-                  <tr key={label} className="border-b border-[var(--color-border)]">
-                    <th className="w-1/3 py-3 pr-4 font-medium text-[var(--color-text-muted)]">
-                      {label}
-                    </th>
-                    <td className="py-3">{value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div>
+            <h3 className="font-semibold text-[var(--color-accent)]">
+              Coste predecible
+            </h3>
+            <p className="mt-2 text-[var(--color-text-muted)]">
+              Las APIs cloud cobran por token. A volumen medio-alto, el hardware propio es más barato. 
+              Pagas una vez, usas siempre.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-[var(--color-accent)]">
+              Control total
+            </h3>
+            <p className="mt-2 text-[var(--color-text-muted)]">
+              Elige el modelo, ajusta los parámetros, decide qué ejecutar. 
+              Sin cambios de política unilaterales. Sin sorpresas.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* RENDIMIENTO */}
-      <section className="px-6 py-24">
+      {/* OPEN WEIGHTS */}
+      <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">Rendimiento con modelos locales</h2>
-          <p className="mt-3 text-[var(--color-text-muted)]">
-            Con 128 GB de memoria unificada, el Strix Halo puede cargar modelos grandes de IA completos en memoria sin swap. 
+          <h2 className="text-2xl font-bold sm:text-3xl">Modelos abiertos, rendimiento real</h2>
+          <p className="mt-4 text-[var(--color-text-muted)]">
+            Los modelos open weights como Qwen, Gemma, Mistral y GPT-OSS son la base de la IA descentralizada. 
+            Con 128 GB de memoria unificada, el Strix Halo puede cargarlos completos sin swap. 
             Estos son los tiempos de inferencia estimados con cuantización Q4:
           </p>
           <div className="mt-10 overflow-x-auto">
@@ -212,6 +146,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ESPECIFICACIONES */}
+      <section className="px-6 py-24">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold sm:text-3xl">Hardware diseñado para IA local</h2>
+          <div className="mt-10 overflow-x-auto">
+            <table className="w-full border-collapse text-left text-sm">
+              <tbody>
+                {[
+                  ["CPU", "AMD Ryzen AI Max+ 395 (Strix Halo), 16 núcleos Zen 5"],
+                  ["Memoria", "128 GB LPDDR5X-8000 unificada (~256 GB/s)"],
+                  ["GPU", "Radeon 8060S integrada (40 CU, RDNA 3.5, 2.9 GHz)"],
+                  ["NPU", "50 TOPS (32 Tiles)"],
+                  ["Almacenamiento", "NVMe Gen4, actualizable"],
+                  ["Ruido", "< 35 dB en reposo, < 45 dB en carga sostenida"],
+                  ["Software", "Ubuntu 24.04 + ROCm stack preinstalado"],
+                ].map(([label, value]) => (
+                  <tr key={label} className="border-b border-[var(--color-border)]">
+                    <th className="w-1/3 py-3 pr-4 font-medium text-[var(--color-text-muted)]">
+                      {label}
+                    </th>
+                    <td className="py-3">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* PROGRESO */}
       <section id="progreso" className="mx-auto max-w-2xl px-6 py-24">
         <h2 className="text-2xl font-bold sm:text-3xl">
@@ -245,7 +208,7 @@ export default function Home() {
       <ReservationForm />
 
       <footer className="px-6 py-12 text-center text-sm text-[var(--color-text-muted)]">
-        <p>Sovereign AI — diseñado y fabricado en la UE. Hardware europeo para soberanía digital europea.</p>
+        <p>Sovereign AI — hardware para IA local. Diseñado y fabricado en la UE.</p>
       </footer>
     </main>
   );
