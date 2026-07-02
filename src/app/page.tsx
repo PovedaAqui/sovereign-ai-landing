@@ -196,43 +196,43 @@ export default function Home() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="mx-auto max-w-4xl px-6 py-16">
+      <section className="mx-auto max-w-4xl px-6 py-12">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("problem_title")}
         </h2>
-        <p className="mt-6 text-lg text-[var(--color-text-muted)]">
+        <p className="mt-5 text-lg leading-relaxed text-[var(--color-text)]">
           {t("problem_body")}
         </p>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
-            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6 transition hover:border-[var(--color-border-hover)]">
+            <h3 className="text-lg font-bold text-[var(--color-accent)]">
               {t("problem_privacy")}
             </h3>
-            <p className="mt-3 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-base leading-relaxed text-[var(--color-text)]">
               {t("problem_privacy_body")}
             </p>
           </div>
-          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
-            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6 transition hover:border-[var(--color-border-hover)]">
+            <h3 className="text-lg font-bold text-[var(--color-accent)]">
               {t("problem_no_intermediaries")}
             </h3>
-            <p className="mt-3 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-base leading-relaxed text-[var(--color-text)]">
               {t("problem_no_intermediaries_body")}
             </p>
           </div>
-          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
-            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6 transition hover:border-[var(--color-border-hover)]">
+            <h3 className="text-lg font-bold text-[var(--color-accent)]">
               {t("problem_predictable_cost")}
             </h3>
-            <p className="mt-3 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-base leading-relaxed text-[var(--color-text)]">
               {t("problem_predictable_cost_body")}
             </p>
           </div>
-          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
-            <h3 className="text-lg font-semibold text-[var(--color-accent)]">
+          <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6 transition hover:border-[var(--color-border-hover)]">
+            <h3 className="text-lg font-bold text-[var(--color-accent)]">
               {t("problem_total_control")}
             </h3>
-            <p className="mt-3 text-[var(--color-text-muted)]">
+            <p className="mt-3 text-base leading-relaxed text-[var(--color-text)]">
               {t("problem_total_control_body")}
             </p>
           </div>
@@ -248,23 +248,23 @@ export default function Home() {
           <p className="mt-6 text-lg text-[var(--color-text-muted)]">
             {t("weights_body")}
           </p>
-          <div className="mt-10 overflow-x-auto">
-            <table className="w-full border-collapse text-left text-sm">
+          <div className="mt-8 overflow-x-auto">
+            <table className="w-full border-collapse text-left">
               <thead>
                 <tr className="border-b-2 border-[var(--color-border)] bg-[var(--color-bg-elevated-2)]">
-                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
+                  <th className="py-4 pr-4 font-bold text-[var(--color-text)]">
                     {locale === "en" ? "Model" : "Modelo"}
                   </th>
-                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
+                  <th className="py-4 pr-4 font-bold text-[var(--color-text)]">
                     {locale === "en" ? "Parameters" : "Parámetros"}
                   </th>
-                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
+                  <th className="py-4 pr-4 font-bold text-[var(--color-text)]">
                     {locale === "en" ? "Architecture" : "Arquitectura"}
                   </th>
-                  <th className="py-4 pr-4 font-semibold text-[var(--color-text)]">
+                  <th className="py-4 pr-4 font-bold text-[var(--color-text)]">
                     {locale === "en" ? "Quantization" : "Cuantización"}
                   </th>
-                  <th className="py-4 font-semibold text-[var(--color-text)]">
+                  <th className="py-4 font-bold text-[var(--color-text)]">
                     {locale === "en" ? "Tokens/sec" : "Tokens/seg"}
                   </th>
                 </tr>
@@ -283,13 +283,13 @@ export default function Home() {
                 ].map(([model, params, arch, quant, tps]) => (
                   <tr
                     key={model}
-                    className="border-b border-[var(--color-border)]"
+                    className="border-b border-[var(--color-border)] transition hover:bg-[var(--color-bg-elevated)]"
                   >
-                    <td className="py-4 font-medium">{model}</td>
+                    <td className="py-4 font-semibold">{model}</td>
                     <td className="py-4 pr-4">{params}</td>
                     <td className="py-4 pr-4">{arch}</td>
                     <td className="py-4 pr-4">{quant}</td>
-                    <td className="py-4 font-bold text-[var(--color-accent)]">
+                    <td className="py-4 font-bold text-lg text-[var(--color-accent)]">
                       {tps}
                     </td>
                   </tr>
@@ -297,20 +297,20 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-          <p className="mt-6 text-xs text-[var(--color-text-muted)]">
+          <p className="mt-5 text-sm text-[var(--color-text-muted)]">
             {t("weights_perf_note")}
           </p>
         </div>
       </section>
 
       {/* SPECS */}
-      <section className="px-6 py-16">
+      <section className="px-6 py-12">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("specs_title")}
           </h2>
-          <div className="mt-10 overflow-x-auto">
-            <table className="w-full border-collapse text-left text-sm">
+          <div className="mt-8 overflow-x-auto">
+            <table className="w-full border-collapse text-left">
               <tbody>
                 {[
                   [
@@ -329,12 +329,12 @@ export default function Home() {
                 ].map(([label, value]) => (
                   <tr
                     key={label}
-                    className="border-b border-[var(--color-border)]"
+                    className="border-b border-[var(--color-border)] transition hover:bg-[var(--color-bg-elevated)]"
                   >
-                    <th className="w-1/3 py-4 pr-4 font-medium text-[var(--color-text)]">
+                    <th className="w-1/3 py-4 pr-4 font-bold text-[var(--color-text)]">
                       {label}
                     </th>
-                    <td className="py-4 text-[var(--color-text-muted)]">{value}</td>
+                    <td className="py-4 text-base text-[var(--color-text)]">{value}</td>
                   </tr>
                 ))}
               </tbody>
@@ -344,17 +344,17 @@ export default function Home() {
       </section>
 
       {/* PROGRESS */}
-      <section id="progreso" className="mx-auto max-w-2xl px-6 py-16">
+      <section id="progreso" className="mx-auto max-w-2xl px-6 py-12">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("progress_title")}
         </h2>
-        <p className="mt-4 text-lg text-[var(--color-text-muted)]">
+        <p className="mt-4 text-lg text-[var(--color-text)]">
           {t("progress_body").replace("{count}", String(GOAL_UNITS))}
         </p>
 
         <div className="mt-10">
           <div
-            className="h-4 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
+            className="h-5 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
             role="img"
             aria-label={`${RESERVED_UNITS} of ${GOAL_UNITS} units reserved`}
           >
@@ -364,11 +364,10 @@ export default function Home() {
               style={{ "--progress": PROGRESS } as React.CSSProperties}
             />
           </div>
-          <p className="mt-3 text-base text-[var(--color-text-muted)]">
+          <p className="mt-4 text-lg font-semibold text-[var(--color-text)]">
             {RESERVED_UNITS} / {GOAL_UNITS}{" "}
             {locale === "en" ? "units" : "unidades"}{" "}
-            {t("progress_reserved")} (
-            {Math.round(PROGRESS * 100)}%)
+            {t("progress_reserved")} ({Math.round(PROGRESS * 100)}%)
           </p>
         </div>
       </section>
