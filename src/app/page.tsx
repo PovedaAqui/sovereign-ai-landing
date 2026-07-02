@@ -33,6 +33,9 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, 768px"
             className="w-full rounded-lg border border-[var(--color-border)]"
           />
+          <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+            Imagen de referencia. El diseño final puede variar ligeramente.
+          </p>
         </div>
 
         <a
