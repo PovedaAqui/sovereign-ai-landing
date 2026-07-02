@@ -102,7 +102,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold sm:text-3xl">Modelos abiertos, rendimiento real</h2>
           <p className="mt-4 text-[var(--color-text-muted)]">
-            Los modelos open weights como Qwen, Gemma, Mistral y GPT-OSS son la base de la IA descentralizada. 
+            Los modelos open weights como Qwen, Gemma, Mistral y DeepSeek son la base de la IA descentralizada. 
             Con 128 GB de memoria unificada, el Strix Halo puede cargarlos completos sin swap. 
             Estos son los tiempos de inferencia estimados con cuantización Q4:
           </p>
@@ -123,7 +123,7 @@ export default function Home() {
                   ["Gemma 4 26B", "26B (3.8B activos)", "MoE (128 expertos)", "Q4_K_M", "≈ 90"],
                   ["Gemma 4 31B", "31B (densa)", "Dense", "Q4_K_M", "≈ 20"],
                   ["Mistral Large", "123B (densa)", "Dense", "Q4_K_M", "≈ 22"],
-                  ["GPT-OSS 120B", "120B", "MoE", "Q4_K_M", "≈ 55"],
+                  ["DeepSeek V3", "236B (MoE)", "MoE (64 expertos)", "Q4_K_M", "≈ 40"],
                   ["MiniMax M2.5", "228B", "MoE", "Q3_K_M", "≈ 35"],
                 ].map(([model, params, arch, quant, tps]) => (
                   <tr key={model} className="border-b border-[var(--color-border)]">
