@@ -19,9 +19,8 @@ export default function Home() {
           La IA que Europa necesita, construida en Europa
         </h1>
         <p className="mt-6 max-w-xl text-lg text-[var(--color-text-muted)]">
-          Sovereign AI es un mini-PC diseñado y fabricado en la UE, basado en
-          AMD Strix Halo con 128&nbsp;GB de memoria unificada. Procesamiento de
-          IA local sin depender de infraestructura cloud extranjera.
+          Un mini-PC diseñado y fabricado en la UE con AMD Strix Halo y 128&nbsp;GB de memoria unificada. 
+          Procesamiento de IA local, sin depender de infraestructura cloud extranjera.
         </p>
 
         <div className="mt-10 w-full max-w-2xl">
@@ -57,11 +56,9 @@ export default function Home() {
             Europa depende de infraestructura de IA extranjera
           </h2>
           <p className="mt-4 text-[var(--color-text-muted)]">
-            El 95% de la capacidad de inferencia de IA en Europa reside en
-            centros de datos de Estados Unidos y China. Esto crea una
-            dependencia estratégica que la EU AI Act y las nuevas normativas de
-            soberanía digital intentan corregir — pero la regulación no sirve de
-            nada sin hardware propio.
+            El 95% de la capacidad de inferencia de IA en Europa reside en centros de datos de Estados Unidos y China. 
+            Esta dependencia estratégica es incompatible con la EU AI Act, el RGPD y la autonomía digital que Europa necesita. 
+            La regulación no sirve de nada sin hardware propio.
           </p>
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
             <div>
@@ -69,9 +66,8 @@ export default function Home() {
                 Soberanía de datos
               </h3>
               <p className="mt-2 text-[var(--color-text-muted)]">
-                Sanidad, justicia y administración pública necesitan que los
-                datos nunca salgan de la UE. La inferencia local es la única
-                forma de cumplir con el RGPD y la EU AI Act sin excepciones.
+                Sanidad, justicia y administración pública no pueden enviar datos a servidores en terceros países. 
+                La inferencia local garantiza que la información sensible permanece en la UE, cumpliendo RGPD y EU AI Act sin excepciones.
               </p>
             </div>
             <div>
@@ -79,9 +75,8 @@ export default function Home() {
                 Independencia tecnológica
               </h3>
               <p className="mt-2 text-[var(--color-text-muted)]">
-                Sin llaves de API de proveedores extranjeros. Sin riesgo de
-                sanciones, bloqueos geopolíticos o cambios de términos de
-                servicio unilaterales. Infraestructura propia, control propio.
+                Sin llaves de API de proveedores extranjeros. Sin riesgo de sanciones, bloqueos geopolíticos o cambios de términos de servicio unilaterales. 
+                Control total sobre la infraestructura crítica.
               </p>
             </div>
             <div>
@@ -89,9 +84,8 @@ export default function Home() {
                 Cadena de suministro europea
               </h3>
               <p className="mt-2 text-[var(--color-text-muted)]">
-                Fabricado en la UE con componentes europeos. Diseño europeo,
-                ensamblaje europeo, soporte europeo. Cada unidad fortalece la
-                base industrial tecnológica del continente.
+                Fabricado en la UE con componentes europeos. Diseño europeo, ensamblaje europeo, soporte europeo. 
+                Cada unidad fortalece la base industrial tecnológica del continente.
               </p>
             </div>
           </div>
@@ -109,8 +103,8 @@ export default function Home() {
               Privacidad real
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              Sanidad, legal y finanzas necesitan que los datos nunca salgan de
-              su red. Local significa local de verdad.
+              Sanidad, legal y finanzas necesitan que los datos nunca salgan de su red. 
+              No se trata de cumplir normativas: se trata de que tus datos sean tuyos.
             </p>
           </div>
           <div>
@@ -118,8 +112,8 @@ export default function Home() {
               EU AI Act
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              La regulación empuja a sectores enteros hacia infraestructura
-              on-premise. Antic&iacute;pate.
+              La regulación empuja a sectores enteros hacia infraestructura on-premise. 
+              Quienes se anticipen tendrán una ventaja competitiva decisiva.
             </p>
           </div>
           <div>
@@ -127,8 +121,8 @@ export default function Home() {
               Coste a largo plazo
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              El punto de equilibrio entre cloud APIs y hardware propio llega
-              antes de lo que crees.
+              Las APIs cloud cobran por token. A volumen medio-alto, el hardware propio es más barato y predecible. 
+              El punto de equilibrio se acerca más de lo que parece.
             </p>
           </div>
           <div>
@@ -136,8 +130,8 @@ export default function Home() {
               Sin dependencias
             </h3>
             <p className="mt-2 text-[var(--color-text-muted)]">
-              Sin llaves de API, sin límites de proveedor, sin apagones de
-              terceros.
+              Sin límites de proveedor, sin apagones de terceros, sin cambios de política unilaterales. 
+              Tu infraestructura, tus reglas.
             </p>
           </div>
         </div>
@@ -177,9 +171,8 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold sm:text-3xl">Rendimiento con modelos locales</h2>
           <p className="mt-3 text-[var(--color-text-muted)]">
-            Con 128 GB de memoria unificada, el Strix Halo puede cargar modelos
-            grandes de IA completos en memoria sin swap. Estos son los tiempos de
-            inferencia reales estimados con cuantización Q4:
+            Con 128 GB de memoria unificada, el Strix Halo puede cargar modelos grandes de IA completos en memoria sin swap. 
+            Estos son los tiempos de inferencia estimados con cuantización Q4:
           </p>
           <div className="mt-10 overflow-x-auto">
             <table className="w-full border-collapse text-left text-sm">
@@ -227,8 +220,8 @@ export default function Home() {
           Meta de producción
         </h2>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Necesitamos {GOAL_UNITS} reservas para arrancar la primera serie de
-          fabricación. Registro gratuito — sin dep&oacute;sito, sin compromiso.
+          Necesitamos {GOAL_UNITS} reservas para arrancar la primera serie de fabricación. 
+          Registro gratuito — sin depósito, sin compromiso.
         </p>
 
         <div className="mt-8">
@@ -254,7 +247,7 @@ export default function Home() {
       <ReservationForm />
 
       <footer className="px-6 py-12 text-center text-sm text-[var(--color-text-muted)]">
-        <p>Sovereign AI — dise&ntilde;ado y fabricado en la UE. Hardware europeo para soberanía digital europea.</p>
+        <p>Sovereign AI — diseñado y fabricado en la UE. Hardware europeo para soberanía digital europea.</p>
       </footer>
     </main>
   );
@@ -326,8 +319,8 @@ function ReservationForm() {
       <div className="mx-auto max-w-md">
         <h2 className="text-2xl font-bold sm:text-3xl">Reserva la tuya</h2>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Registro gratuito. Sin dep&oacute;sito, sin compromiso. Solo
-          necesitamos {GOAL_UNITS} reservas para arrancar la producci&oacute;n.
+          Registro gratuito. Sin depósito, sin compromiso. Solo
+          necesitamos {GOAL_UNITS} reservas para arrancar la producción.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">
@@ -361,7 +354,7 @@ function ReservationForm() {
 
           <div>
             <label htmlFor="country" className="block text-sm font-medium">
-              Pa&iacute;s
+              País
             </label>
             <input
               id="country"
@@ -398,7 +391,7 @@ function ReservationForm() {
               className="mt-1 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
             />
             <label htmlFor="consent" className="text-sm text-[var(--color-text-muted)]">
-              Acepto la pol&iacute;tica de privacidad y los t&eacute;rminos
+              Acepto la política de privacidad y los términos
               de la reserva.
             </label>
           </div>
