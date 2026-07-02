@@ -150,12 +150,12 @@ export default function Home() {
               <tbody>
                 {[
                   ["CPU", "AMD Ryzen AI Max+ 395 (Strix Halo), 16 núcleos Zen 5"],
-                  ["Memoria", "128 GB LPDDR5X-8000 unificada"],
-                  ["GPU", "Radeon 8060S integrada"],
-                  ["Rendimiento", "70B Q4 ≈ 18–22 tok/s · 120B MoE ≈ 53 tok/s"],
+                  ["Memoria", "128 GB LPDDR5X-8000 unificada (~256 GB/s)"],
+                  ["GPU", "Radeon 8060S integrada (40 CU, RDNA 3.5, 2.9 GHz)"],
+                  ["NPU", "50 TOPS (32 Tiles)"],
                   ["Almacenamiento", "NVMe Gen4, actualizable"],
                   ["Ruido", "< 35 dB en reposo, < 45 dB en carga sostenida"],
-                  ["Software", "Ubuntu 24.04 + ROCm/CUDA stack preinstalado"],
+                  ["Software", "Ubuntu 24.04 + ROCm stack preinstalado"],
                 ].map(([label, value]) => (
                   <tr key={label} className="border-b border-[var(--color-border)]">
                     <th className="w-1/3 py-3 pr-4 font-medium text-[var(--color-text-muted)]">
@@ -167,6 +167,55 @@ export default function Home() {
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+
+      {/* RENDIMIENTO */}
+      <section className="px-6 py-24">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold sm:text-3xl">Rendimiento con modelos locales</h2>
+          <p className="mt-3 text-[var(--color-text-muted)]">
+            Con 128 GB de memoria unificada, el Strix Halo puede cargar modelos
+            grandes de IA completos en memoria sin swap. Estos son los tiempos de
+            inferencia reales estimados con cuantización Q4:
+          </p>
+          <div className="mt-10 overflow-x-auto">
+            <table className="w-full border-collapse text-left text-sm">
+              <thead>
+                <tr className="border-b border-[var(--color-border)]">
+                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">Modelo</th>
+                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">Parámetros</th>
+                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">Arquitectura</th>
+                  <th className="py-3 pr-4 font-semibold text-[var(--color-text-muted)]">Cuantización</th>
+                  <th className="py-3 font-semibold text-[var(--color-text-muted)]">Tokens/seg</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Qwen3.6-35B", "35B (3B activos)", "MoE (256 expertos)", "Q4_K_M", "≈ 85"],
+                  ["Gemma 4 26B", "26B (3.8B activos)", "MoE (128 expertos)", "Q4_K_M", "≈ 90"],
+                  ["Gemma 4 31B", "31B (densa)", "Dense", "Q4_K_M", "≈ 20"],
+                  ["Llama 3.3 70B", "70B", "Dense", "Q4_K_M", "≈ 18"],
+                  ["GPT-OSS 120B", "120B", "MoE", "Q4_K_M", "≈ 55"],
+                  ["MiniMax M2.5", "228B", "MoE", "Q3_K_M", "≈ 35"],
+                ].map(([model, params, arch, quant, tps]) => (
+                  <tr key={model} className="border-b border-[var(--color-border)]">
+                    <td className="py-3 font-medium">{model}</td>
+                    <td className="py-3 pr-4">{params}</td>
+                    <td className="py-3 pr-4">{arch}</td>
+                    <td className="py-3 pr-4">{quant}</td>
+                    <td className="py-3 font-semibold text-[var(--color-accent)]">{tps}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-6 text-xs text-[var(--color-text-muted)]">
+            Rendimiento estimado con ROCm en Strix Halo (Radeon 8060S, 40 CU, 128 GB LPDDR5X-8000).
+            Los valores reales pueden variar según el modelo, el sistema y la versión de ROCm.
+            Los modelos MoE activan solo un subconjunto de parámetros por token, lo que permite
+            mayor throughput sin sacrificar calidad.
+          </p>
         </div>
       </section>
 
