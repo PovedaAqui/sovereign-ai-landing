@@ -141,9 +141,9 @@ export default function ReservationForm() {
           {t("form_subtitle").replace("{count}", String(GOAL_UNITS))}
         </p>
 
-        <form onSubmit={handleSubmit} className="mt-10 space-y-6">
+        <form onSubmit={handleSubmit} className="mt-10 space-y-7">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium">
+            <label htmlFor="name" className="block text-sm font-semibold">
               {t("form_name")}
             </label>
             <input
@@ -153,12 +153,12 @@ export default function ReservationForm() {
               autoComplete="name"
               required
               placeholder={t("form_name_placeholder")}
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-2 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium">
+            <label htmlFor="email" className="block text-sm font-semibold">
               {t("form_email")}
             </label>
             <input
@@ -168,12 +168,12 @@ export default function ReservationForm() {
               autoComplete="email"
               required
               placeholder={t("form_email_placeholder")}
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-2 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]"
             />
           </div>
 
           <div>
-            <label htmlFor="country" className="block text-sm font-medium">
+            <label htmlFor="country" className="block text-sm font-semibold">
               {t("form_country")}
             </label>
             <input
@@ -183,19 +183,19 @@ export default function ReservationForm() {
               autoComplete="country-name"
               required
               placeholder={t("form_country_placeholder")}
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-2 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]"
             />
           </div>
 
           <div>
-            <label htmlFor="variant" className="block text-sm font-medium">
+            <label htmlFor="variant" className="block text-sm font-semibold">
               {locale === "en" ? "Variant" : "Variante"}
             </label>
             <select
               id="variant"
               name="variant"
               required
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-2 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]"
             >
               <option value="pro">Pro</option>
             </select>
@@ -211,7 +211,7 @@ export default function ReservationForm() {
             />
             <label
               htmlFor="consent"
-              className="text-sm text-[var(--color-text-muted)]"
+              className="text-sm leading-relaxed text-[var(--color-text)]"
               dangerouslySetInnerHTML={{ __html: t("form_consent") }}
             />
           </div>

@@ -200,7 +200,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("problem_title")}
         </h2>
-        <p className="mt-5 text-lg leading-relaxed text-[var(--color-text)]">
+        <p className="mt-5 text-lg leading-[1.75] text-[var(--color-text)]">
           {t("problem_body")}
         </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
@@ -285,7 +285,7 @@ export default function Home() {
                     key={model}
                     className="border-b border-[var(--color-border)] transition hover:bg-[var(--color-bg-elevated)]"
                   >
-                    <td className="py-4 font-semibold">{model}</td>
+                    <td className="py-4 font-bold">{model}</td>
                     <td className="py-4 pr-4">{params}</td>
                     <td className="py-4 pr-4">{arch}</td>
                     <td className="py-4 pr-4">{quant}</td>
@@ -304,7 +304,7 @@ export default function Home() {
       </section>
 
       {/* SPECS */}
-      <section className="px-6 py-16">
+      <section className="border-b border-[var(--color-border)] px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("specs_title")}
