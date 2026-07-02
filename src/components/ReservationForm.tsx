@@ -131,17 +131,17 @@ export default function ReservationForm() {
   return (
     <section
       id="reserva"
-      className="border-t border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24"
+      className="border-t border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-20"
     >
       <div className="mx-auto max-w-md">
-        <h2 className="text-2xl font-bold sm:text-3xl">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("form_title")}
         </h2>
-        <p className="mt-3 text-[var(--color-text-muted)]">
+        <p className="mt-4 text-lg leading-relaxed text-[var(--color-text)]">
           {t("form_subtitle").replace("{count}", String(GOAL_UNITS))}
         </p>
 
-        <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+        <form onSubmit={handleSubmit} className="mt-10 space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium">
               {t("form_name")}
@@ -153,7 +153,7 @@ export default function ReservationForm() {
               autoComplete="name"
               required
               placeholder={t("form_name_placeholder")}
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
             />
           </div>
 
@@ -168,7 +168,7 @@ export default function ReservationForm() {
               autoComplete="email"
               required
               placeholder={t("form_email_placeholder")}
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
             />
           </div>
 
@@ -183,19 +183,19 @@ export default function ReservationForm() {
               autoComplete="country-name"
               required
               placeholder={t("form_country_placeholder")}
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
             />
           </div>
 
           <div>
             <label htmlFor="variant" className="block text-sm font-medium">
-              Variant
+              {locale === "en" ? "Variant" : "Variante"}
             </label>
             <select
               id="variant"
               name="variant"
               required
-              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
+              className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3.5 text-base focus:border-[var(--color-accent)] focus:outline-none"
             >
               <option value="pro">Pro</option>
             </select>
@@ -223,7 +223,7 @@ export default function ReservationForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-full rounded-md bg-[var(--color-accent)] px-6 py-4 text-base font-semibold text-black transition hover:opacity-90 disabled:opacity-50"
+            className="cta-button w-full"
           >
             {status === "submitting" ? t("form_submitting") : t("form_submit")}
           </button>

@@ -183,12 +183,12 @@ export default function Home() {
 
         <a
           href="#reserva"
-          className="cta-button mt-12 inline-flex items-center justify-center"
+          className="cta-button mt-16 inline-flex items-center justify-center"
         >
           {t("hero_cta")}
         </a>
 
-        <p className="mt-6 text-base text-[var(--color-text-muted)]">
+        <p className="mt-8 text-base text-[var(--color-text-muted)]">
           {RESERVED_UNITS} {locale === "en" ? "reservations" : "reservas"} ·{" "}
           {locale === "en" ? "Goal:" : "Meta:"} {GOAL_UNITS}{" "}
           {locale === "en" ? "units" : "unidades"}
@@ -304,7 +304,7 @@ export default function Home() {
       </section>
 
       {/* SPECS */}
-      <section className="px-6 py-12">
+      <section className="px-6 py-16">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("specs_title")}
@@ -344,17 +344,17 @@ export default function Home() {
       </section>
 
       {/* PROGRESS */}
-      <section id="progreso" className="mx-auto max-w-2xl px-6 py-12">
+      <section id="progreso" className="mx-auto max-w-2xl px-6 py-16">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {t("progress_title")}
         </h2>
-        <p className="mt-4 text-lg text-[var(--color-text)]">
+        <p className="mt-5 text-lg leading-relaxed text-[var(--color-text)]">
           {t("progress_body").replace("{count}", String(GOAL_UNITS))}
         </p>
 
-        <div className="mt-10">
+        <div className="mt-12">
           <div
-            className="h-5 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
+            className="h-6 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
             role="img"
             aria-label={`${RESERVED_UNITS} of ${GOAL_UNITS} units reserved`}
           >
@@ -364,7 +364,7 @@ export default function Home() {
               style={{ "--progress": PROGRESS } as React.CSSProperties}
             />
           </div>
-          <p className="mt-4 text-lg font-semibold text-[var(--color-text)]">
+          <p className="mt-5 text-lg font-semibold text-[var(--color-text)]">
             {RESERVED_UNITS} / {GOAL_UNITS}{" "}
             {locale === "en" ? "units" : "unidades"}{" "}
             {t("progress_reserved")} ({Math.round(PROGRESS * 100)}%)
