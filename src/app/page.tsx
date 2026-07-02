@@ -225,9 +225,8 @@ export default function Home() {
           Meta de producción
         </h2>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Necesitamos {GOAL_UNITS} reservas confirmadas para arrancar la
-          primera serie de fabricación. Depósito reembolsable de 49&euro;. Se
-          cobra el resto solo si alcanzamos la meta.
+          Necesitamos {GOAL_UNITS} reservas para arrancar la primera serie de
+          fabricación. Registro gratuito — sin dep&oacute;sito, sin compromiso.
         </p>
 
         <div className="mt-8">
@@ -257,8 +256,8 @@ export default function Home() {
         <div className="mx-auto max-w-md">
           <h2 className="text-2xl font-bold sm:text-3xl">Reserva la tuya</h2>
           <p className="mt-3 text-[var(--color-text-muted)]">
-            Depósito reembolsable de 49&euro;. Se cobra el resto solo si
-            alcanzamos la meta de fabricación.
+            Registro gratuito. Sin dep&oacute;sito, sin compromiso. Solo
+            necesitamos {GOAL_UNITS} reservas para arrancar la producci&oacute;n.
           </p>
 
           <form action="/api/reserve" method="POST" className="mt-8 space-y-5">
@@ -344,7 +343,7 @@ export default function Home() {
               type="submit"
               className="w-full rounded-md bg-[var(--color-accent)] px-6 py-4 text-base font-semibold text-black transition hover:opacity-90"
             >
-              Reservar por 49&euro;
+              Reservar gratis
             </button>
           </form>
         </div>
