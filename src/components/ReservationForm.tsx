@@ -129,9 +129,7 @@ export default function ReservationForm() {
               required
               className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
             >
-              <option value="mesh">Mesh Airflow</option>
-              <option value="ridge">Ridge Curvo</option>
-              <option value="sg13">SG13 Minimalista</option>
+              <option value="pro">Pro</option>
             </select>
           </div>
 
