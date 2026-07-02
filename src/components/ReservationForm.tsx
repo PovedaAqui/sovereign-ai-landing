@@ -142,8 +142,11 @@ export default function ReservationForm() {
               className="mt-1 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
             />
             <label htmlFor="consent" className="text-sm text-[var(--color-text-muted)]">
-              Acepto la pol&iacute;tica de privacidad y los t&eacute;rminos
-              de la reserva.
+              Acepto la{" "}
+              <a href="/privacy.md" target="_blank" rel="noopener noreferrer" className="text-[var(--color-accent)] underline underline-offset-2">
+                política de privacidad
+              </a>{" "}
+              y los términos de la reserva.
             </label>
           </div>
 
