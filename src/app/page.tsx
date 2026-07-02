@@ -197,7 +197,7 @@ export default function Home() {
                   ["Qwen3.6-35B", "35B (3B activos)", "MoE (256 expertos)", "Q4_K_M", "≈ 85"],
                   ["Gemma 4 26B", "26B (3.8B activos)", "MoE (128 expertos)", "Q4_K_M", "≈ 90"],
                   ["Gemma 4 31B", "31B (densa)", "Dense", "Q4_K_M", "≈ 20"],
-                  ["Llama 3.3 70B", "70B", "Dense", "Q4_K_M", "≈ 18"],
+                  ["Mistral Large", "123B (densa)", "Dense", "Q4_K_M", "≈ 22"],
                   ["GPT-OSS 120B", "120B", "MoE", "Q4_K_M", "≈ 55"],
                   ["MiniMax M2.5", "228B", "MoE", "Q3_K_M", "≈ 35"],
                 ].map(([model, params, arch, quant, tps]) => (
