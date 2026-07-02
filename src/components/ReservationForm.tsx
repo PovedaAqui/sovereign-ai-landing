@@ -7,7 +7,7 @@ type Locale = "en" | "es";
 
 const translations = {
   en: {
-    form_title: "Reserve your SAI",
+    form_title: "Reserve your SA!",
     form_subtitle:
       "Free registration. No deposit. No commitment. We need {count} reservations to start the first manufacturing batch.",
     form_name: "Full name",
@@ -27,7 +27,7 @@ const translations = {
     form_error_required: "This field is required.",
   },
   es: {
-    form_title: "Reserva tu SAI",
+    form_title: "Reserva tu SA!",
     form_subtitle:
       "Registro gratuito. Sin depósito. Sin compromiso. Necesitamos {count} reservas para arrancar la primera serie de fabricación.",
     form_name: "Nombre completo",

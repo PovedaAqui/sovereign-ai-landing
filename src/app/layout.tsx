@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sovereignai.example.com"),
-  title: "SAI — Tu IA, tu hardware, sin nube",
+  title: "SA! — Tu IA, tu hardware, sin nube",
   description:
-    "Reserva el mini-PC SAI: AMD Strix Halo, 128GB de memoria unificada, IA local sin depender de la nube. Pre-reserva ahora y ayuda a que se fabrique.",
+    "Reserva el mini-PC SA!: AMD Strix Halo, 128GB de memoria unificada, IA local sin depender de la nube. Pre-reserva ahora y ayuda a que se fabrique.",
   openGraph: {
-    title: "SAI — Tu IA, tu hardware, sin nube",
+    title: "SA! — Tu IA, tu hardware, sin nube",
     description:
       "Mini-PC local para IA basado en AMD Strix Halo. Reserva la tuya antes de que termine la campaña.",
     images: [
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
         url: "/images/hero-chassis.png",
         width: 1024,
         height: 768,
-        alt: "SAI — chasis del mini-PC",
+        alt: "SA! — chasis del mini-PC",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SAI — Tu IA, tu hardware, sin nube",
+    title: "SA! — Tu IA, tu hardware, sin nube",
     description:
       "Mini-PC local para IA basado en AMD Strix Halo. Reserva la tuya antes de que termine la campaña.",
     images: ["/images/hero-chassis.png"],
