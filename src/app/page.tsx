@@ -271,11 +271,11 @@ export default function Home() {
               </thead>
               <tbody>
                 {[
-                  ["Gemma 4 26B", "26B (3.8B active)", "MoE (128 experts)", "Q4_K_M", "≈ 90"],
-                  ["Qwen3.6-35B", "35B (3B active)", "MoE (256 experts)", "Q4_K_M", "≈ 85"],
-                  ["MiniMax M2.5", "228B", "MoE", "Q3_K_M", "≈ 35"],
-                  ["DeepSeek-V3.2", "685B (MoE)", "MoE (DSA)", "Q4_K_M", "≈ 30"],
-                  ["DeepSeek-V3", "671B (37B active)", "MoE (MLA)", "Q4_K_M", "≈ 28"],
+                  ["Qwen3-30B-A3B-Instruct", "30B (3B active)", "MoE", "IQ4_XS", "≈ 103"],
+                  ["Qwen3-Coder 30B-A3B", "30B (3B active)", "MoE", "Q4_K_S", "≈ 101"],
+                  ["Qwen3.6 35B-A3B", "35B (3B active)", "MoE", "Q4_K_M", "≈ 77"],
+                  ["Nemotron 3 Nano 30B-A3B", "31B (3.5B active)", "MoE", "IQ4_XS", "≈ 76"],
+                  ["Gemma 4 26B-A4B", "26B (4B active)", "MoE", "UD-Q4_K_M", "≈ 48"],
                 ].map(([model, params, arch, quant, tps]) => (
                   <tr
                     key={model}
