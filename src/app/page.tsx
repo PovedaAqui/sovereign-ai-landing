@@ -38,7 +38,7 @@ const translations = {
     progress_body:
       "We need {count} reservations to start the first manufacturing batch. Free registration — no deposit, no commitment.",
     progress_reserved: "reserved",
-    form_title: "Reserve your Sovereign AI",
+    form_title: "Reserve your SAI",
     form_subtitle: "Free registration. No deposit. No commitment.",
     form_name: "Full name",
     form_name_placeholder: "Your name",
@@ -54,7 +54,7 @@ const translations = {
     form_error: "Something went wrong. Please try again.",
     form_error_required: "This field is required.",
     form_error_consent: "You must accept the privacy policy.",
-    footer: "Sovereign AI — hardware for local AI. Designed and manufactured in the EU.",
+    footer: "SAI — hardware for local AI. Designed and manufactured in the EU.",
     privacy_link: "privacy policy",
   },
   es: {
@@ -89,7 +89,7 @@ const translations = {
     progress_body:
       "Necesitamos {count} reservas para arrancar la primera serie de fabricación. Registro gratuito — sin depósito, sin compromiso.",
     progress_reserved: "reservadas",
-    form_title: "Reserva tu Sovereign AI",
+    form_title: "Reserva tu SAI",
     form_subtitle: "Registro gratuito. Sin depósito. Sin compromiso.",
     form_name: "Nombre completo",
     form_name_placeholder: "Tu nombre",
@@ -105,7 +105,7 @@ const translations = {
     form_error: "Algo salió mal. Inténtalo de nuevo.",
     form_error_required: "Este campo es obligatorio.",
     form_error_consent: "Debes aceptar la política de privacidad.",
-    footer: "Sovereign AI — hardware para IA local. Diseñado y fabricado en la UE.",
+    footer: "SAI — hardware para IA local. Diseñado y fabricado en la UE.",
     privacy_link: "política de privacidad",
   },
 };
@@ -171,8 +171,8 @@ export default function Home() {
             src="/images/hero-chassis.png"
             alt={
               locale === "en"
-                ? "Chassis of the Sovereign AI mini-PC — industrial design in black aluminum with perforated front panel"
-                : "Chasis del mini-PC Sovereign AI — diseño industrial en aluminio negro con panel frontal perforado"
+                ? "Chassis of the SAI mini-PC — industrial design in black aluminum with perforated front panel"
+                : "Chasis del mini-PC SAI — diseño industrial en aluminio negro con panel frontal perforado"
             }
             className="hero-image w-full"
           />
