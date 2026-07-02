@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-const GOAL_UNITS = 500;
-const RESERVED_UNITS = 132;
+const GOAL_UNITS = 100;
+const RESERVED_UNITS = 0;
 const PROGRESS = RESERVED_UNITS / GOAL_UNITS;
 
 export default function Home() {
@@ -40,11 +40,11 @@ export default function Home() {
           href="#reserva"
           className="mt-10 inline-flex items-center justify-center rounded-md bg-[var(--color-accent)] px-8 py-4 text-base font-semibold text-black transition hover:opacity-90"
         >
-          Reserva la tuya — desde 49&euro;
+          Reg&iacute;strate gratis — ayuda a que se fabrique
         </a>
 
         <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-          {RESERVED_UNITS} reservas · Meta: {GOAL_UNITS} unidades
+          {RESERVED_UNITS} inscripciones · Meta: {GOAL_UNITS}
         </p>
       </section>
 
@@ -125,18 +125,18 @@ export default function Home() {
       {/* PROGRESO */}
       <section id="progreso" className="mx-auto max-w-2xl px-6 py-24">
         <h2 className="text-2xl font-bold sm:text-3xl">
-          Progreso de la reserva
+          Progreso de las inscripciones
         </h2>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Tu dep&oacute;sito es 100% reembolsable si no alcanzamos la meta de
-          fabricaci&oacute;n.
+          Necesitamos {GOAL_UNITS} registros para alcanzar el umbral de
+          financiaci&oacute;n y arrancar la producci&oacute;n.
         </p>
 
         <div className="mt-8">
           <div
             className="h-3 w-full overflow-hidden rounded-full bg-[var(--color-bg-elevated)]"
             role="img"
-            aria-label={`${RESERVED_UNITS} de ${GOAL_UNITS} unidades reservadas`}
+            aria-label={`${RESERVED_UNITS} de ${GOAL_UNITS} registros completados`}
           >
             <div
               aria-hidden="true"
@@ -145,25 +145,25 @@ export default function Home() {
             />
           </div>
           <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-            {RESERVED_UNITS} / {GOAL_UNITS} unidades reservadas (
-            {Math.round(PROGRESS * 100)}%)
+            {RESERVED_UNITS} / {GOAL_UNITS} registros completados ({Math.round(PROGRESS * 100)}%)
           </p>
         </div>
       </section>
 
-      {/* FORMULARIO DE RESERVA */}
+      {/* FORMULARIO DE REGISTRO */}
       <section
         id="reserva"
         className="border-t border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-6 py-24"
       >
         <div className="mx-auto max-w-md">
-          <h2 className="text-2xl font-bold sm:text-3xl">Reserva la tuya</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">Reg&iacute;strate gratis</h2>
           <p className="mt-3 text-[var(--color-text-muted)]">
-            Dep&oacute;sito reembolsable de 49&euro;. Se cobra el resto solo si
-            alcanzamos la meta de fabricaci&oacute;n.
+            Necesitamos {GOAL_UNITS} registros para alcanzar el umbral de
+            financiaci&oacute;n y arrancar la producci&oacute;n. Sin pagos, sin
+            compromisos.
           </p>
 
-          <form action="/api/reserve" method="POST" className="mt-8 space-y-5">
+          <form action="/api/register" method="POST" className="mt-8 space-y-5">
             <div>
               <label htmlFor="name" className="block text-sm font-medium">
                 Nombre completo
@@ -219,12 +219,12 @@ export default function Home() {
               <select
                 id="variant"
                 name="variant"
-                required
                 className="mt-1 block w-full rounded-md border border-[var(--color-border)] bg-transparent px-3 py-3 text-base focus:border-[var(--color-accent)] focus:outline-none"
               >
                 <option value="mesh">Mesh Airflow</option>
                 <option value="ridge">Ridge Curvo</option>
                 <option value="sg13">SG13 Minimalista</option>
+                <option value="">Sin preferencia</option>
               </select>
             </div>
 
@@ -237,8 +237,8 @@ export default function Home() {
                 className="mt-1 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
               />
               <label htmlFor="consent" className="text-sm text-[var(--color-text-muted)]">
-                Acepto la pol&iacute;tica de privacidad y los t&eacute;rminos
-                de la reserva.
+                Acepto la pol&iacute;tica de privacidad y recibir actualizaciones
+                del proyecto.
               </label>
             </div>
 
@@ -246,7 +246,7 @@ export default function Home() {
               type="submit"
               className="w-full rounded-md bg-[var(--color-accent)] px-6 py-4 text-base font-semibold text-black transition hover:opacity-90"
             >
-              Reservar por 49&euro;
+              Registrarme gratis
             </button>
           </form>
         </div>
